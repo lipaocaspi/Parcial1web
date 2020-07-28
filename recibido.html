@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RECIBIDO</title>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var x1 = getParameterByName('alimento')
+			var x2 = getParameterByName('calorias')
+			var x3 = getParameterByName('grasas')
+			var x4 = getParameterByName('proteina')
+			var x5 = getParameterByName('carbohidratos')
+			var x6 = getParameterByName('emoji')
+			llenarTabla(x1, x2, x3, x4, x5, x6)
+		});
+	</script>
+</head>
+<body>
+
+<table id="Table"></table>
+
+<script type="text/javascript" src="functions.js"></script>
+
+</body>
+</html>
